@@ -1,0 +1,465 @@
+@import "bourbon/bourbon"
+
+$main_color: #91d25d
+$silver: #4c594f
+$nth_color: #37a000
+$nth_light: #84d056
+
+*
+	margin: 0
+	padding: 0
+@extend:.before
+	content: ''
+	width: 100%
+	height: 100%
+	position: absolute
+	z-index: 15
+	bottom: 0
+	left: 0
+	border-bottom: 1px solid #000
+body
+	font-family: "GothamRegular", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+.main_head
+	position: relative
+	min-height: 600px
+	padding-top: 25px
+.logo_container
+	width: auto
+	height: auto
+	float: left
+	img
+		position: relative
+		width: 76px
+		height: 76px
+		z-index: 15
+		
+
+.toggle_mnu
+	width: 60px
+	height: 60px
+	position: fixed
+	z-index: 100
+	border: 2px solid $main_color
+	right: 20px
+	top: 25px
+	background-color: transparent
+	outline: none
+	span
+		display: block
+
+
+$w: 28px
+$h: 3px
+
+.sandwich 
+	width: $w
+	height: $w
+	position: absolute
+	top: 8px
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 200
+
+.sw-topper
+	position: relative
+	top: 0
+	width: $w 
+	height: $h
+	background: $main_color
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	display: block
+			
+	//transition-delay: 0.2s, 0s
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 2.2
+	background: $main_color
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 4.5
+	background: $main_color
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: 0.1s
+.sandwich.active
+	.sw-topper
+		top: 9px
+		transform: rotate(-45deg)
+	.sw-bottom
+		top: 6px
+		transform: rotate(45deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+.top_mnu
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,.85)
+	z-index: 50
+	right: 0
+	top: 0
+	display: none
+	ul,
+	li
+		list-style-type: none
+		padding: 0
+		margin: 0
+	ul
+		margin-top: 180px
+		text-align: center
+		+animation-duration(.01s)
+		li
+			&:nth-child(1) a
+				+animation-delay(0)
+			&:nth-child(2) a
+				+animation-delay(.1s)
+			&:nth-child(3) a
+				+animation-delay(.2s)
+			&:nth-child(4) a
+				+animation-delay(.3s)
+			&:nth-child(5) a
+				+animation-delay(.4s)				
+		a
+			color: #fff
+			display: block
+			text-transform: uppercase
+			font-size: 12px
+			font-family: "GothamRegular"
+			opacity: 0
+			position: relative
+			height: 60px
+			outline: none
+			letter-spacing: 3px
+		a:hover
+			color: $main_color
+			span
+				display: block
+				position: relative
+				top: -40px
+				left: 0
+				height: 100%
+				+transition(all 0.5s ease)
+				&:hover
+					background-color: rgba(255,255,255,.08)		
+
+
+
+.loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../images/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-posirion: center center
+		background-color: #fff
+		height: 64px
+		width: 64px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+.mnu_footer
+	width: 100%
+	min-height: 150px
+	background-color: #666
+	padding: 30px 0 0 0
+.wrap_logo
+	position: relative
+	width: 100%
+	height: auto
+	text-align: center
+	padding: 0 0 35px 0
+	&:after
+		content: ''
+		width: 100%
+		height: 20px
+		position: absolute
+		z-index: 15
+		bottom: 0
+		left: 0
+		border-bottom: 2px solid #b2b2b2
+	img
+		width: 76px
+		height: 76px
+.wrap_description_footer
+	text-align: center
+	h6
+		color: #b2b2b2
+		font-size: em(13px)
+		padding: 25px 0 25px 0
+		font-family: "GothamRegular"
+section
+	width: 100%
+	height: auto
+	overflow: hidden
+	padding: 80px 0 80px 0	
+	background-color: #fff
+
+.title_section
+	width: 100%
+	height: auto
+	padding: 15px 17px
+	border: 4px solid $main_color
+	text-align: center
+	margin-top: 40px
+	margin-bottom: 40px
+	h1
+		text-transform: uppercase
+		font-size: em(65px)
+		color: $main_color
+		margin: 0
+		padding: 0
+		display: inline-block
+		line-height: 72px
+		letter-spacing: 0px
+		font-weight: 600
+
+.content_us
+	font-family: "GothamRegular"
+	letter-spacing: 0
+	text-align: center
+	color: $silver
+	h1
+		font-family: "Distractor"
+		letter-spacing: 0.5px
+		padding: 0
+		margin: 0
+		display: inline-block
+		font-size: em(50px)
+		font-weight: 600
+		text-transform: uppercase
+		padding-right: 9px
+		color: #6e6f6e
+		span
+			color: #5cca00
+			font-family: "Distractor"
+	>span
+		font-weight: 600
+		font-size: em(28px)
+	p
+		color: $silver
+		padding-top: 50px
+		margin: 0
+		font-size: em(26px)
+		letter-spacing: 0
+
+#_features
+	background-color: #52a028
+	width: 100%
+	height: auto
+	text-align: center
+	h2
+		color: #fff
+		font-family: "GothamRegular"
+		font-size: em(30px)
+		padding: 0 0 30px 0
+		margin: 0
+
+#_features 
+	width: 100%
+	height: auto
+	color: #fff
+	text-align: center
+	h3
+		font-size: em(23px)
+		padding: 30px 0 28px 0
+		color: #b0e44f
+	p 
+		font-size: em(14px)
+		font-family: "GothamLight"
+		text-transform: uppercase
+		// font-weight: 600
+		// color: $silver
+	i
+		&:before
+			text-align: center
+			margin: 0
+			padding: 0
+			font-size: em(100px)
+			font-weight: 400
+
+.resize
+	padding: 0 10% 0 10%
+
+#_technology
+	width: 100%
+	height: auto
+	h1
+		text-align: center
+		font-size: em(33px)
+		font-family: "GothamLight"
+		letter-spacing: 1px
+
+.container_tech
+	min-height: 400px
+	max-width: 290px
+	margin: 0 auto
+	border: 6px solid $main_color
+	margin-top: 50px
+	margin-bottom: 50px
+	text-align: center
+	.tech_wrapp
+		min-height: 160px
+		position: relative
+		background-size: 100%
+		background-position: top center
+		text-align: center
+		background-repeat: no-repeat
+		padding-bottom: 35px
+		img
+			position: absolute
+			bottom: 50%
+			transform: translateY(125%)
+			left: 35%
+	.tech_html
+		background-image: url("../images/html_bg.png")
+	.tech_js
+		background-image: url("../images/js_bg.png")
+	.tech_preroc
+		background-image: url("../images/preproc_bg.png")
+	.tech_bottom
+		padding: 40px
+		h3
+			color: $silver
+			font-size: em(25px)
+		p
+			margin-top: 20px
+			font-family: "GothamLight"
+			font-weight: 600
+			color: $silver
+			font-size: em(17px)
+
+#portfolio
+	width: 100%
+	height: auto
+	letter-spacing: 0
+	background-color: #eaeaea
+	text-align: center
+	padding: 0 0 45px 0
+	h2
+		font-size: em(45px)
+		font-family: "GothamLight"
+		color: #666666
+		padding: 40px 0 40px 0
+		background-color: #eaeaea
+	#portfolio_grid
+		overflow: hidden
+.portfolio_item
+	padding: 0
+	margin: 0
+	img
+		width: 100%
+		vertical-align: middle
+	&:hover .port_item
+		opacity: 1
+		padding-top: 20%
+.port_item
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, 0.8)
+	text-align: center
+	padding-top: 15%
+	opacity: 0
+	-webkit-transition: all 0.6s
+	transition: all 0.6s
+	>h3
+		display: inline-block
+		border-bottom: 2px solid $silver
+		color: $main_color
+		margin-bottom: 0
+		font-size: em(33px)
+		padding: 20px 0 0 0
+		font-family: "GothamLight"
+	a
+		border: $main_color 1px solid
+		padding: 0 10px
+		background-color: transparent
+		color: $main_color
+		font-size: em(14px)
+		font-family: "GothamLight"
+		text-transform: uppercase
+		line-height: 35px
+		display: inline-block
+	p
+		color: #888
+		font-size: em(22px)
+		padding: 20px 0
+	
+.port_descr
+	background-color: #fff
+	max-width: 500px
+	margin: 0 auto
+	p,
+	h3
+		padding: 20px
+		padding-bottom: 0
+	h3
+		font-family: "GothamRegular"
+		color: #b0e44f
+		margin-bottom: 0
+		text-align: center
+		text-transform: uppercase
+		font-weight: 400
+		margin-top: 20px
+		padding-top: 25px
+	p
+		margin-top: 0
+		color: #b2b2b2
+	img
+		width: 100%
+		margin-top: 20px
+
+.mfp-close-btn-in 
+	.mfp-close
+		color: $main_color
+
+.modal-box-content
+	position: relative
+	background-color: #666
+
+	
