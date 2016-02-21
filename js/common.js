@@ -46,10 +46,26 @@ $(document).ready(function() {
 	$(".animation_4").animated("fadeInUp", "fadeOutDown");
 	$(".animation_5").animated("zoomIn", "zoomOut");
 	$(".tech_wrapp").animated("zoomIn", "zoomOut");
+	$(".portfolio_titile").animated("fadeInUp", "fadeOutDown");
+	$(".size_media1").animated("fadeInRight", "fadeOutRight");
+	$(".size_media2").animated("fadeInRight", "fadeOutRight");
+	$(".size_media3").animated("fadeInRight", "fadeOutRight");
+	$(".size_media4").animated("fadeInRight", "fadeOutRight");
+	$(".size_media5").animated("fadeInRight", "fadeOutRight");
+	$(".size_media6").animated("fadeInRight", "fadeOutRight");
+	$(".img_right").animated("fadeInRight", "fadeOutRight");
 	
 	$("input, select, textarea").jqBootstrapValidation();
 
 	$(".top_mnu ul a").mPageScroll2id();
+
+	$('#home a').click(function (e) {
+	  e.preventDefault()
+	  $(this).tab('show')
+	})
+
+
+
 
 });
 $(window).load(function() {

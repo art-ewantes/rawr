@@ -5,6 +5,12 @@ $silver: #4c594f
 $nth_color: #37a000
 $nth_light: #84d056
 
+=animation-delay($animation)
+	-webkit-animation-delay: $animation
+	-o-animation-delay: $animation
+	-moz-animation-delay: $animation
+	animation-delay: $animation
+
 *
 	margin: 0
 	padding: 0
@@ -462,4 +468,123 @@ section
 	position: relative
 	background-color: #666
 
+#how_work
+	width: 100%
+	letter-spacing: 0	
+	background-color: #4d4a4a
+	min-height: 500px
+	.work_process_element
+		float: left
+		padding: 0 40px 0 40px
+		display: inline
+		margin-left: 10px
+		margin-right: 10px
+		h3
+			font-size: em(24px)
+			font-family: "GothamLight"
+			font-weight: 600
+.nav-tabs > li.active 
 	
+.nav-tabs > a
+	>h3
+		color: #fff
+		text-align: center
+
+	&:hover
+		color: #fff
+.nav-tabs > li.active > a
+	color: #fff
+	background-color: transparent
+	border: none
+	border-bottom-color: transparent
+	cursor: pointer
+	opacity: .8
+	&:hover, &:focus
+		color: #fff
+		background-color: transparent
+		border: none
+		border-bottom-color: transparent
+		cursor: pointer
+
+.nav-tabs > li > a:hover
+	border-color: transparent
+
+.nav-tabs > li 
+	opacity: 1
+
+				
+.nav > li > a
+	border: none
+	&:hover, &:focus
+		text-decoration: none
+		background-color: transparent
+.nav-tabs
+	border-bottom: none
+	a
+		text-align: center
+a,
+a:hover, a:focus
+	text-decoration: none
+	color: #fff
+
+.active
+	>.fa-angle-down
+		display: inline-block
+
+
+.fa-angle-down
+	display: none
+	position: relative
+	left: 50%
+	transform: translateX(-50%)
+	font-size: em(40px)
+	color: #fff	
+
+.tab-content
+	width: 100%
+	height: auto
+	p
+		font-size: em(20px)
+		font-family: "GothamLight"
+		font-weight: 600
+		color: #b2b2bb
+
+.img_right
+	display: inline-block
+	float: left
+	width: 30px
+	height: 130px
+	border: 0
+	margin: 0
+	padding: 0
+	text-align: center
+	.fa-angle-right
+		position: relative
+		top: 50%
+		transform: translateY(-50%)
+		color: #7b7979
+		font-size: em(40px)
+
+.content_table
+	width: 100%
+	height: auto
+	letter-spacing: 0
+	padding-top: 25px
+	p
+		font-size: em(20px)
+		font-family: "GothamLight"
+		font-weight: 600
+		color: #b2b2bb
+
+.size_media1
+	+animation-delay(0.5s)
+.size_media2
+	+animation-delay(0.8s)
+.size_media3
+	+animation-delay(1s)
+.size_media4
+	+animation-delay(1.2s)
+.size_media5
+	+animation-delay(1.5s)
+.size_media6
+	+animation-delay(1.7s)
