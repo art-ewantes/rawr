@@ -54,6 +54,7 @@ $(document).ready(function() {
 	$(".size_media5").animated("fadeInRight", "fadeOutRight");
 	$(".size_media6").animated("fadeInRight", "fadeOutRight");
 	$(".img_right").animated("fadeInRight", "fadeOutRight");
+	$(".section_header").animated("fadeInUp", "fadeOutDown");
 	
 	$("input, select, textarea").jqBootstrapValidation();
 

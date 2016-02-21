@@ -616,3 +616,97 @@ a:hover, a:focus {
   -o-animation-delay: 1.5s;
   -moz-animation-delay: 1.5s;
   animation-delay: 1.5s; }
+
+#contacts {
+  background-color: #FAFAFA;
+  padding: 50px 0 50px 0; }
+  #contacts .section_header {
+    text-align: center;
+    padding-bottom: 80px; }
+    #contacts .section_header .s_descr_wrap {
+      font-size: 1.125em;
+      font-family: "GothamLight";
+      font-weight: 400; }
+      #contacts .section_header .s_descr_wrap .s_descr::after {
+        content: "";
+        height: 1px;
+        left: 50%;
+        margin-left: -75px;
+        margin-top: 60px;
+        position: absolute;
+        width: 150px;
+        background-color: #000; }
+    #contacts .section_header h2 {
+      font-size: 2.1875em;
+      padding-bottom: 15px;
+      font-family: "GothamLight";
+      font-weight: 600; }
+
+.form-group {
+  display: block;
+  margin-bottom: 25px; }
+  .form-group .color_element {
+    font-weight: 700;
+    font-size: 18px; }
+  .form-group .text-danger {
+    font-size: 11px;
+    margin-top: 5px;
+    display: block; }
+    .form-group .text-danger ul,
+    .form-group .text-danger li {
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+  .form-group textarea {
+    min-height: 150px; }
+
+button {
+  padding: 8px 25px;
+  border-radius: 0px;
+  background-color: #8ad159;
+  border: 1px solid #8ad159;
+  color: #fff;
+  margin-top: 20px;
+  float: right; }
+
+.error {
+  margin-top: 10px; }
+
+.form-group input,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  text-indent: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.0625em;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: "GothamLight";
+  background-color: #eeeeee;
+  -webkit-input-placeholder: #8ad159;
+  -moz-placeholder: #8ad159;
+  -moz-placeholder: #8ad159;
+  -ms-input-placeholder: #8ad159; }
+
+.contact_box {
+  margin-bottom: 30px; }
+  .contact_box .contacts_icon {
+    font-size: 3.125em; }
+  .contact_box h3 {
+    text-align: left;
+    color: #000;
+    margin-bottom: 0px;
+    font-size: 14px;
+    letter-spacing: 2px; }
+  .contact_box p {
+    margin-top: 5px;
+    color: #888; }
+    .contact_box p a {
+      color: green;
+      font-family: "GothamLight"; }
+
+.contacts_icon {
+  color: #8ad159; }

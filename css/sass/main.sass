@@ -11,6 +11,19 @@ $nth_light: #84d056
 	-moz-animation-delay: $animation
 	animation-delay: $animation
 
+=border-radius($border-radius)
+	-webkit-border-radius: $border-radius
+	-o-border-radius: $border-radius
+	-moz-border-radius: $border-radius
+	border-radius: $border-radius
+
+=placeholder ($placeholder) 
+	-webkit-input-placeholder: $placeholder
+	-moz-placeholder: $placeholder
+	-moz-placeholder: $placeholder
+	-ms-input-placeholder: $placeholder
+
+
 *
 	margin: 0
 	padding: 0
@@ -590,3 +603,110 @@ a:hover, a:focus
 	+animation-delay(1.2s)
 .size_media6
 	+animation-delay(1.5s)
+
+
+#contacts
+	background-color: #FAFAFA
+	padding: 50px 0 50px 0
+	.section_header
+		text-align: center
+		padding-bottom: 80px
+		.s_descr_wrap
+			font-size: em(18px)
+			font-family: "GothamLight"
+			font-weight: 400
+			.s_descr
+				&::after
+					content: ""
+					height: 1px
+					left: 50%
+					margin-left: -75px
+					margin-top: 60px
+					position: absolute
+					width: 150px
+					background-color: #000
+		h2
+			font-size: em(35px)
+			padding-bottom: 15px
+			font-family: "GothamLight"
+			font-weight: 600
+.form-group
+	display: block
+	margin-bottom: 25px
+	.color_element
+		font-weight: 700
+		font-size: 18px
+	.text-danger
+		font-size: 11px
+		margin-top: 5px
+		display: block
+		ul,
+		li
+			margin: 0
+			padding: 0
+			list-style-type: none
+	textarea
+		min-height: 150px	
+button
+	padding: 8px 25px
+	border-radius: 0px
+	background-color: #8ad159
+	border: 1px solid #8ad159
+	color: #fff
+	margin-top: 20px
+	float: right
+
+.error
+	margin-top: 10px
+
+
+.form-group
+	input,
+	textarea
+		display: block
+		width: 100%
+		margin-top: 5px
+		border: 1px solid #ccc
+		text-indent: 10px
+		padding-top: 10px
+		padding-bottom: 10px
+		font-size: em(17px)
+		letter-spacing: 1px
+		font-weight: 400
+		font-family: "GothamLight"
+		background-color: #eeeeee
+		+placeholder(#8ad159)
+		// -webkit-box-shadow: inset 91px 6px 19px 7px rgba(233,233,233,0.26)
+		// -moz-box-shadow: inset 91px 6px 19px 7px rgba(233,233,233,0.26)
+		// box-shadow: inset 91px 6px 19px 7px rgba(233,233,233,0.26)
+		// +border-radius(5px)
+		// ::-webkit-input-placeholder,	::-moz-placeholder,	:-moz-placeholder,	:-ms-input-placeholder
+		// 	color: #8ad159
+
+.contact_box
+	margin-bottom: 30px
+	.contacts_icon
+		font-size: em(50px)
+	h3
+		text-align: left
+		color: #000
+		margin-bottom: 0px
+		font-size: 14px
+		letter-spacing: 2px
+	p
+		margin-top: 5px
+		color: #888
+		a
+			color: green
+			font-family: "GothamLight"
+
+
+.contacts_icon
+	color: #8ad159
+
+
+
+
+
+
+

@@ -14,11 +14,45 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
-}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	
+.size_media1 {
+-webkit-animation-delay: 0.3s;
+-o-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s; }
+
+.size_media2 {
+-webkit-animation-delay: 0.3s;
+-o-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s; }
+
+.size_media3 {
+-webkit-animation-delay: 0.3s;
+-o-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s; }
+
+.size_media4 {
+-webkit-animation-delay:0.3s;
+-o-animation-delay:0.3s;
+-moz-animation-delay:0.3s;
+animation-delay:0.3s; }
+
+.size_media5 {
+-webkit-animation-delay: 0.3s;
+-o-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s; }
+
+.size_media6 {
+-webkit-animation-delay: 0.3s;
+-o-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s; }
+}
 }
 
 /* Extra Small Devices, Phones */
