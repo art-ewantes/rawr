@@ -504,7 +504,7 @@ section {
   border: none;
   border-bottom-color: transparent;
   cursor: pointer;
-  opacity: 0.8; }
+  opacity: 0.6; }
   .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     color: #fff;
     background-color: transparent;
@@ -660,7 +660,7 @@ a:hover, a:focus {
   .form-group textarea {
     min-height: 150px; }
 
-button {
+.main_form button {
   padding: 8px 25px;
   border-radius: 0px;
   background-color: #8ad159;
