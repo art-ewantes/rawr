@@ -692,21 +692,29 @@ a:hover, a:focus {
   -ms-input-placeholder: #8ad159; }
 
 .contact_box {
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
   .contact_box .contacts_icon {
-    font-size: 3.125em; }
+    font-size: 4.0625em;
+    display: inline-block;
+    vertical-align: middle; }
   .contact_box h3 {
     text-align: left;
     color: #000;
     margin-bottom: 0px;
     font-size: 14px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 25px; }
   .contact_box p {
-    margin-top: 5px;
-    color: #888; }
+    color: #888;
+    display: inline-block;
+    vertical-align: middle; }
     .contact_box p a {
       color: green;
-      font-family: "GothamLight"; }
+      font-family: "GothamLight";
+      display: inline-block;
+      vertical-align: middle; }
 
 .contacts_icon {
   color: #8ad159; }

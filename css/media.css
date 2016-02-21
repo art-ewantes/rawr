@@ -57,7 +57,20 @@ animation-delay: 0.3s; }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.contact_box .contacts_icon {
+    display: block;
+     }
+		.contact_box h3{
+			display: block;
+			padding-left: 0;
+		}
+		.contact_box p{
+			display: block;
+			padding-top: 5px;
+		}
+		.contact_box p a{
+			display: block;
+		}
 }
 
 /* Custom, iPhone Retina */
