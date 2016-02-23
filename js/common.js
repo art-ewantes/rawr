@@ -60,10 +60,10 @@ $(document).ready(function() {
 
 	$(".top_mnu ul a").mPageScroll2id();
 
-	$('#home a').click(function (e) {
-	  e.preventDefault()
-	  $(this).tab('show')
-	})
+	// $('#home a').click(function (e) {
+	//   e.preventDefault()
+	//   $(this).tab('show')
+	// })
 
 
 

@@ -169,12 +169,12 @@ body textarea:required:valid {
       display: block;
       text-transform: uppercase;
       font-size: 12px;
-      font-family: "GothamRegular";
+      font-family: "GothamLight";
       opacity: 0;
       position: relative;
       height: 60px;
       outline: none;
-      letter-spacing: 3px; }
+      letter-spacing: 2px; }
     .top_mnu ul a:hover {
       color: #91d25d; }
       .top_mnu ul a:hover span {
@@ -250,45 +250,49 @@ section {
   width: 100%;
   height: auto;
   overflow: hidden;
-  padding: 80px 0 80px 0;
+  padding: 50px 0 50px 0;
   background-color: #fff; }
+
+#_about {
+  padding: 50px 0 50px 0; }
 
 .title_section {
   width: 100%;
   height: auto;
-  padding: 15px 17px;
-  border: 4px solid #91d25d;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px; }
+  text-align: center; }
   .title_section h1 {
-    text-transform: uppercase;
-    font-size: 4.0625em;
-    color: #91d25d;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    line-height: 72px;
-    letter-spacing: 0px;
-    font-weight: 600; }
+    font-size: 2.1875em;
+    padding-bottom: 15px;
+    font-family: "GothamLight";
+    font-weight: 600;
+    color: #4c594f;
+    margin: 0; }
+    .title_section h1::after {
+      content: "";
+      height: 1px;
+      left: 50%;
+      margin-left: -75px;
+      margin-top: 60px;
+      position: absolute;
+      width: 150px;
+      background-color: #000; }
 
 .content_us {
   font-family: "GothamRegular";
   letter-spacing: 0;
   text-align: center;
   color: #4c594f; }
-  .content_us h1 {
+  .content_us h2 {
     font-family: "Distractor";
     letter-spacing: 0.5px;
-    padding: 0;
+    padding: 15px 0 0;
     margin: 0;
     display: inline-block;
     font-size: 3.125em;
     font-weight: 600;
     text-transform: uppercase;
-    padding-right: 9px;
     color: #6e6f6e; }
-    .content_us h1 span {
+    .content_us h2 span {
       color: #5cca00;
       font-family: "Distractor"; }
   .content_us > span {
@@ -296,36 +300,48 @@ section {
     font-size: 1.75em; }
   .content_us p {
     color: #4c594f;
-    padding-top: 50px;
+    padding-top: 25px;
     margin: 0;
-    font-size: 1.625em;
+    font-size: 1.5625em;
     letter-spacing: 0; }
 
 #_features {
   background-color: #52a028;
   width: 100%;
   height: auto;
-  text-align: center; }
-  #_features h2 {
+  text-align: center;
+  padding: 50px 0 70px 0; }
+  #_features h1 {
     color: #fff;
-    font-family: "GothamRegular";
-    font-size: 1.875em;
-    padding: 0 0 30px 0;
+    font-family: "GothamLight";
+    font-weight: 600;
+    font-size: 2.1875em;
+    padding-bottom: 15px;
     margin: 0; }
+    #_features h1:after {
+      content: "";
+      height: 1px;
+      left: 50%;
+      margin-left: -150px;
+      margin-top: 60px;
+      position: absolute;
+      width: 300px;
+      background-color: #fff; }
 
 #_features {
   width: 100%;
   height: auto;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  padding: 50px 0 50px 0; }
   #_features h3 {
     font-size: 1.4375em;
     padding: 30px 0 28px 0;
     color: #b0e44f; }
   #_features p {
-    font-size: 0.875em;
+    font-size: 1.0625em;
     font-family: "GothamLight";
-    text-transform: uppercase; }
+    font-weight: 500; }
   #_features i:before {
     text-align: center;
     margin: 0;
@@ -341,9 +357,20 @@ section {
   height: auto; }
   #_technology h1 {
     text-align: center;
-    font-size: 2.0625em;
+    font-size: 2.1875em;
     font-family: "GothamLight";
-    letter-spacing: 1px; }
+    font-weight: 600;
+    padding-bottom: 15px;
+    margin: 0; }
+    #_technology h1::after {
+      content: "";
+      height: 1px;
+      left: 50%;
+      margin-left: -100px;
+      margin-top: 60px;
+      position: absolute;
+      width: 200px;
+      background-color: #000; }
 
 .container_tech {
   min-height: 400px;
@@ -390,13 +417,24 @@ section {
   letter-spacing: 0;
   background-color: #eaeaea;
   text-align: center;
-  padding: 0 0 45px 0; }
-  #portfolio h2 {
-    font-size: 2.8125em;
+  padding-bottom: 100px; }
+  #portfolio h1 {
+    text-align: center;
+    font-size: 2.1875em;
     font-family: "GothamLight";
+    font-weight: 600;
+    padding-bottom: 55px;
     color: #666666;
-    padding: 40px 0 40px 0;
-    background-color: #eaeaea; }
+    margin: 0; }
+    #portfolio h1::after {
+      content: "";
+      height: 1px;
+      left: 50%;
+      margin-left: -100px;
+      margin-top: 60px;
+      position: absolute;
+      width: 200px;
+      background-color: #000; }
   #portfolio #portfolio_grid {
     overflow: hidden; }
 
@@ -480,7 +518,7 @@ section {
   width: 100%;
   letter-spacing: 0;
   background-color: #4d4a4a;
-  min-height: 500px; }
+  min-height: 400px; }
   #how_work .work_process_element {
     float: left;
     padding: 0 40px 0 40px;
@@ -488,7 +526,7 @@ section {
     margin-left: 10px;
     margin-right: 10px; }
     #how_work .work_process_element h3 {
-      font-size: 1.5em;
+      font-size: 1.375em;
       font-family: "GothamLight";
       font-weight: 600; }
 
@@ -549,9 +587,9 @@ a:hover, a:focus {
   width: 100%;
   height: auto; }
   .tab-content p {
-    font-size: 1.25em;
+    font-size: 1.4375em;
     font-family: "GothamLight";
-    font-weight: 600;
+    font-weight: 500;
     color: #b2b2bb; }
 
 .img_right {
