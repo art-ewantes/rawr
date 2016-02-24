@@ -2,24 +2,110 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	// .content_us h1{
-	// 	font-size: 25px;
-	// }
+	.size_media{
+		width: 100%;
+		display: block;
+	}
+	.fa-angle-down{
+		display: inline-block;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+.size_media1 {
+-webkit-animation-delay: 0.3s;
+-o-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s; }
 
-}
+.size_media2 {
+-webkit-animation-delay: 0.3s;
+-o-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s; }
+
+.size_media3 {
+-webkit-animation-delay: 0.3s;
+-o-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s; }
+
+.size_media4 {
+-webkit-animation-delay:0.3s;
+-o-animation-delay:0.3s;
+-moz-animation-delay:0.3s;
+animation-delay:0.3s; }
+
+.size_media5 {
+-webkit-animation-delay: 0.3s;
+-o-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s; }
+
+.size_media6 {
+-webkit-animation-delay: 0.3s;
+-o-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s; }
+}	
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+.size_media1 {
+-webkit-animation-delay: 0.3s;
+-o-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s; }
 
+.size_media2 {
+-webkit-animation-delay: 0.3s;
+-o-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s; }
+
+.size_media3 {
+-webkit-animation-delay: 0.3s;
+-o-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s; }
+
+.size_media4 {
+-webkit-animation-delay:0.3s;
+-o-animation-delay:0.3s;
+-moz-animation-delay:0.3s;
+animation-delay:0.3s; }
+
+.size_media5 {
+-webkit-animation-delay: 0.3s;
+-o-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s; }
+
+.size_media6 {
+-webkit-animation-delay: 0.3s;
+-o-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s; }
+}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.contact_box .contacts_icon {
+    display: block;
+     }
+		.contact_box h3{
+			display: block;
+			padding-left: 0;
+		}
+		.contact_box p{
+			display: block;
+			padding-top: 5px;
+		}
+		.contact_box p a{
+			display: block;
+		}
 }
 
 /* Custom, iPhone Retina */
