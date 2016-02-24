@@ -48,6 +48,13 @@ animation-delay: 0.3s; }
 -o-animation-delay: 0.3s;
 -moz-animation-delay: 0.3s;
 animation-delay: 0.3s; }
+.gifcont{
+	width: 60%;
+	height: auto;
+}
+.cont_descr_about_left{
+	text-align: left;
+}	
 }	
 
 /* Small Devices, Tablets */
