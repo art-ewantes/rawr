@@ -254,7 +254,7 @@ section {
   background-color: #fff; }
 
 #_about {
-  padding: 50px 0 50px 0; }
+  padding: 50px 0 70px 0; }
 
 .title_section {
   width: 100%;
@@ -756,3 +756,12 @@ a:hover, a:focus {
 
 .contacts_icon {
   color: #8ad159; }
+
+.cont_descr_about_right {
+  text-align: left; }
+
+.cont_descr_about_left {
+  text-align: right; }
+
+.descr_about {
+  padding: 50px 0 50px 0; }
