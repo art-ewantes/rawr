@@ -44,7 +44,7 @@ $(document).ready(function() {
 	$(".animation_2").animated("fadeInDown", "fadeOutUp");
 	$(".animation_3").animated("fadeInRight", "fadeOutRight");
 	$(".animation_4").animated("fadeInUp", "fadeOutDown");
-	$(".animation_5").animated("zoomIn", "zoomOut");
+	$(".animation_5").animated("fadeInUp", "fadeOutDown");
 	$(".tech_wrapp").animated("zoomIn", "zoomOut");
 	$(".portfolio_titile").animated("fadeInUp", "fadeOutDown");
 	$(".size_media1").animated("fadeInRight", "fadeOutRight");
@@ -55,6 +55,13 @@ $(document).ready(function() {
 	$(".size_media6").animated("fadeInRight", "fadeOutRight");
 	$(".img_right").animated("fadeInRight", "fadeOutRight");
 	$(".section_header").animated("fadeInUp", "fadeOutDown");
+	$(".about_animated_left").animated("fadeInLeft", "fadeOutLeft");
+	$(".about_animated_pulse").animated("pulse");
+	$(".about_animated_left").animated("fadeInLeft", "fadeOutLeft");
+	$(".about_animated_right").animated("fadeInLeft", "fadeOutLeft");
+	$(".cont_descr_about_right").animated("fadeInRight", "fadeOutRight");
+	$(".cont_descr_about_left").animated("fadeInLeft", "fadeOutLeft");
+	$(".cont_descr_about_pulse").animated("pulse");
 	
 	$("input, select, textarea").jqBootstrapValidation();
 
