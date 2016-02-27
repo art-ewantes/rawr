@@ -66,6 +66,7 @@ $(document).ready(function() {
 	$("input, select, textarea").jqBootstrapValidation();
 
 	$(".top_mnu ul a").mPageScroll2id();
+	$(".mnu_footer .back_to_top a").mPageScroll2id();
 
 	// $('#home a').click(function (e) {
 	//   e.preventDefault()
