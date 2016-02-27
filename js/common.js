@@ -66,7 +66,7 @@ $(document).ready(function() {
 	$("input, select, textarea").jqBootstrapValidation();
 
 	$(".top_mnu ul a").mPageScroll2id();
-	$(".mnu_footer .back_to_top a").mPageScroll2id();
+	$(".s_contacts .back_to_top a").mPageScroll2id();
 
 	// $('#home a').click(function (e) {
 	//   e.preventDefault()
@@ -80,7 +80,7 @@ $(document).ready(function() {
 $(window).load(function() {
 
 	$(".loader_inner").fadeOut();
-	$(".loader").delay(1000).fadeOut("slow");
+	$(".loader").delay(600).fadeOut("slow");
 
 	// $(".top_text h1").animated("fadeInDown", "fadeOutUp");
 	// $(".top_text p").animated("fadeInUp", "fadeOutDown");

@@ -60,6 +60,9 @@ animation-delay: 0.3s; }
 .cont_descr_about_left{
 	text-align: left;
 }	
+.content_us p {
+    font-size: 1.4375em;
+    letter-spacing: 0; }
 }	
 
 /* Small Devices, Tablets */
@@ -102,6 +105,28 @@ animation-delay: 0.3s; }
 -o-animation-delay: 0.3s;
 -moz-animation-delay: 0.3s;
 animation-delay: 0.3s; }
+.content_us p {
+  font-size: 1.2375em;
+  letter-spacing: 0; 
+}
+.content_table p{
+	font-size: 1.1875em;
+}
+#how_work h1{
+	font-size: 1.875em;
+}
+#contacts .section_header h2{
+	font-size: 1.875em;
+}
+#portfolio h1{
+	font-size: 1.875em;
+}
+#_features h1{
+	font-size: 1.875em;
+}
+.section_header h1{
+	font-size: 1.875em;
+}
 }
 
 
@@ -124,6 +149,33 @@ animation-delay: 0.3s; }
 .gifcont{
 	width: 100%;
 	height: auto;
+}
+.content_us p {
+  font-size: 1.0625em;
+  letter-spacing: 0; }
+.content_table p{
+	font-size: 1.125em ;
+}
+#how_work h1{
+	font-size: 1.75em;
+}
+#contacts .section_header h2{
+	font-size: 1.75em;
+}
+.media_top{
+	padding-bottom: 20px;
+}
+#portfolio h1{
+	font-size: 1.75em;
+}
+#_features h1{
+	font-size: 1.75em;
+}
+.section_header h1{
+	font-size: 1.75em;
+}
+.content_us h2{
+	font-size: 2.575em;
 }
 }
 
