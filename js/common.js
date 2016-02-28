@@ -68,10 +68,10 @@ $(document).ready(function() {
 	$(".top_mnu ul a").mPageScroll2id();
 	$(".s_contacts .back_to_top a").mPageScroll2id();
 
-	// $('#home a').click(function (e) {
-	//   e.preventDefault()
-	//   $(this).tab('show')
-	// })
+	$('#home a').click(function (e) {
+	  e.preventDefault()
+	  $(this).tab('show')
+	})
 
 
 
