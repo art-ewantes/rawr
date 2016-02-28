@@ -127,6 +127,9 @@ animation-delay: 0.3s; }
 .section_header h1{
 	font-size: 1.875em;
 }
+.port_item{
+	opacity: 1;
+}
 }
 
 
