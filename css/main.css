@@ -486,25 +486,26 @@ section {
     padding: 20px 0; }
 
 .port_descr {
-  background-color: #fff;
-  max-width: 700px;
+  background-color: transparent;
+  max-width: 800px;
   margin: 0 auto; }
   .port_descr p,
   .port_descr h3 {
-    padding: 20px;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    text-align: left;
+    padding: 15px 0 0 25px; }
   .port_descr h3 {
-    font-family: "GothamRegular";
-    color: #b0e44f;
+    font-family: "GothamLight";
+    color: #fff;
     margin-bottom: 0;
-    text-align: center;
     text-transform: uppercase;
-    font-weight: 400;
-    margin-top: 20px;
-    padding-top: 25px; }
+    font-weight: 600;
+    margin-top: 20px; }
   .port_descr p {
     margin-top: 0;
-    color: #b2b2b2; }
+    color: #fff;
+    font-family: "GothamLight";
+    font-weight: 500; }
   .port_descr img {
     width: 100%;
     margin-top: 20px; }
@@ -514,7 +515,7 @@ section {
 
 .modal-box-content {
   position: relative;
-  background-color: #666; }
+  background-color: transparent; }
 
 #how_work {
   width: 100%;
